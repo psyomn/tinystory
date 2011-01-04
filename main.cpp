@@ -16,23 +16,28 @@ using namespace std;
 
 // Classes
 #include "FileHandler.cpp"
+#include "dsQueue.cpp"
+
+// Main program
 
 int main(){
-  FileHandler f;
-  f.setFilename("text.txt");
-  // --== Initialization ==--
-  ifstream read;
-  string str;
-  string str2;
-  
-  cout << "Add";
+  //Init
+  //  FileHandler f("theStory.txt");
+  Queue<string> q;
 
-  read.open("text.txt");
-  while (!read.eof()){
-    getline(read, str2);
-    str2+= "\n"; 
-    str += str2;
-  }
-  
-  cout << str;
+  q.push("ASDF");
+  q.push("QWER");
+  q.push("1234");
+  q.push("0987");
+  q.push("derp");
+  q.push("herp");
+
+  q.print();
+
+//  cout << q.pop() << endl;
+
+  //Body
+  // cout << f.getContents();
+
+  return 0; // Yay, nothing broke
 }

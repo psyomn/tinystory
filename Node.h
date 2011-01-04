@@ -1,0 +1,24 @@
+/**
+* @auth psyomn
+* This class is left totally public as security should be
+* taken care of by the actual data structures
+*/
+#ifndef _NODE_H_
+#define _NODE_H_
+
+template <class D>
+class Node {
+public:
+  D dat;
+  Node<D>* pNext;
+
+  Node<D>(){
+    pNext = NULL; 
+  }
+  ~Node(){
+    if(!pNext){ delete pNext; }
+  }
+
+};
+
+#endif

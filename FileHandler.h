@@ -30,10 +30,9 @@ public:
 
   // Functions
 
-  /** Init Manually */
-  void init();
 private:
-  string fileName;
+  string fileName; /** Member var to store the filename */
+  string contents; /** Member var to store the file contents */
   
   /** The actual method to process the files */
   string processFile();
