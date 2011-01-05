@@ -62,7 +62,7 @@ template <class T> void Queue<T>::print(){
   p = pFront;
   int i = 0;
 
-  while(p->pNext){ // while the next node is not null
+  while(p){ // while the node is not null
     cout << i << " " << p->dat << endl;
     i++;
     p = p->pNext; // set for the next iteration
