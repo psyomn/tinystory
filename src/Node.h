@@ -1,7 +1,8 @@
 /**
 * @auth psyomn
 * This class is left totally public as security should be
-* taken care of by the actual data structures
+* taken care of by the actual data structures. I'm doing 
+* this to reduce code clutter.
 */
 #ifndef _NODE_H_
 #define _NODE_H_

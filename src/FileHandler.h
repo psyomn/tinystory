@@ -5,6 +5,7 @@
 *  @author Simon (psyomn) Symeonidis
 *  @file
 *  This is a helper class to help access files.
+*  Accessing means reading, and writing. 
 */
 
 class FileHandler{
@@ -27,9 +28,11 @@ public:
 
   /** Accessor to retrieve the output */
   string getContents();
+  /** Mutator to clear the string contents */
+  void clear();
 
   // Functions
-
+  void writeFile(string, string); 
 private:
   string fileName; /** Member var to store the filename */
   string contents; /** Member var to store the file contents */

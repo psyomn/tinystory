@@ -49,4 +49,15 @@ string FileHandler::processFile(){
   return str;
 }
 
+void FileHandler::clear(){
+  contents.clear(); // Clear the string safely. Save space. Save trees.
+}
+
+void FileHandler::writeFile(string fname, string contents){
+  ofstream out;
+  out.open(fname.c_str()); // Open a file for writing
+  out.write(contents.c_str(), contents.length());
+  out.close(); // Close the file when done
+}
+
 #endif

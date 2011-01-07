@@ -10,9 +10,8 @@ public:
   TinyStoryEngine();       /** Main constructor. Since no filename is specified, the constructor will take care of prompting the user with a filename */
   TinyStoryEngine(string); /** Constructor with a given filename */
   ~TinyStoryEngine();      /** Main destructor  */
-
+  void writeOut();
 private:
-
 };
 
 #endif
