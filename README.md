@@ -1,5 +1,5 @@
 TinyStory
---------------------------------------------------------------------------
+========================================================================
 This is a C++ program, that was made in order to provide people who are
 into storytelling in interactive like books a small, simple application
 which will provide enough abstraction to create said stories with ease
