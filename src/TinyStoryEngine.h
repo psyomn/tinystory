@@ -5,6 +5,9 @@
 #ifndef _TINYSTORYENGINE_H_
 #define _TINYSTORYENGINE_H_
 
+#include <string>
+using namespace std;
+
 class TinyStoryEngine {
 public:
   TinyStoryEngine();       /** Main constructor. Since no filename is specified, the constructor will take care of prompting the user with a filename */

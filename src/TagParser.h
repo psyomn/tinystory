@@ -8,6 +8,9 @@
 #ifndef _TAGPARSER_H_
 #define _TAGPARSER_H_
 
+#include <string>
+using namespace std;
+#include "Tokenizer.h"
 
 class TagParser {
 public:

@@ -3,11 +3,10 @@
 *  @file
 */
 
-#include <string>
-#include "Tokenizer.h"
-
 #ifndef _TOKENIZER_CPP_
 #define _TOKENIZER_CPP_
+
+#include "Tokenizer.h"
 
 Tokenizer::Tokenizer(){
   delim = ' ';

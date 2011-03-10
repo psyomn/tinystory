@@ -7,6 +7,7 @@
 #define _TOKENIZER_H_
 
 #include "dsQueue.cpp"
+#include <string>
 
 class Tokenizer {
 public:

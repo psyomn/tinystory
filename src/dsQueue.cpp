@@ -6,17 +6,20 @@
 #ifndef _DSQUEUE_CPP_
 #define _DSQUEUE_CPP_
 
+#include <iostream>
+using namespace std;
+
 #include "dsQueue.h" // Header
 #include "Node.h"    // Standard node class
 
 template <class T> Queue<T>::Queue(){
   size   = 0;
-  pFront = NULL; // Head is null
-  pBack  = NULL; // Tail is null
+  pFront = 0; // Head is null
+  pBack  = 0; // Tail is null
 }
 
 template <class T> Queue<T>::~Queue(){
-  
+  // TODO!  
 }
 
 template <class T> bool Queue<T>::empty(){
@@ -54,8 +57,22 @@ template <class T> void Queue<T>::push(T d){
 }
 
 template <class T> T Queue<T>::pop(){
-  
+  T result;
+  if (pFront){ // not null
+    result = pFront->dat;
+    if (pFront->pNext){
+      Node<T>* p;
+      p = pFront;
+      pFront = pFront->pNext;
+      delete p;
+    }
+    else{
+      pFront = NULL;
+    }
+  }
+
   size--;
+  return result;
 }
 template <class T> void Queue<T>::print(){
   Node<T>* p;

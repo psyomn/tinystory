@@ -1,5 +1,5 @@
-#ifndef
-#define
+#ifndef _TINYSTORYENGINE_CPP_
+#define _TINYSTORYENGINE_CPP_     
 
 #include "TinyStoryEngine.h"
 

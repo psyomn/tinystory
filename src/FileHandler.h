@@ -1,6 +1,11 @@
 #ifndef _FILEHANDLER_H_
 #define _FILEHANDLER_H_
 
+#include <iostream>
+#include <string>
+#include <fstream>
+using namespace std;
+
 /**
 *  @author Simon (psyomn) Symeonidis
 *  @file

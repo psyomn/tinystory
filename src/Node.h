@@ -14,7 +14,7 @@ public:
   Node<D>* pNext;
 
   Node<D>(){
-    pNext = NULL; 
+    pNext = 0; 
   }
   ~Node(){
     if(!pNext){ delete pNext; }
