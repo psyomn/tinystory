@@ -1,6 +1,5 @@
-/**
-* @auth psyomn
-* A simple queue DS
+/** This is the datastructure that will be used for this project. 
+* @author psyomn
 */
 
 #ifndef _DSQUEUE_H_

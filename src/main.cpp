@@ -1,5 +1,23 @@
 /**
-*  @author Simon (psyomn) Symeonidis
+*  \mainpage TinyStory
+*  \section Why TinyStory 
+*  This is a program which was developed in order for a friend to 
+*  write pretty stories in html. The idea is that the person writing
+*  the said story can simply run the program in the directory with 
+*  a specified text file, and then generate the story in a standalone
+*  html file, with interactivity provided with javascript.
+*  \section Why did reinvent some things you could've just included?
+*  Well, I was doing this project mainly for practice. So you'll see
+*  a datastructure or some other things I could have included from 
+*  other libraries...
+*  \section How much attention will you be giving this project?
+*  I'm going to complete it and have basic functionality, but 
+*  probably will not maintain it in the future, unless it acquires
+*  a reasonable 'big' userbase.
+*  \section Can I help?
+*  I would love to work with more people. Give me a shout at my email
+*  listed.
+*  @author Simon (psyomn) Symeonidis lethaljellybean@gmail.com
 *  @file
 *  @section
 *  This part is the main part of the program. It is responsible to 
@@ -34,10 +52,8 @@ int main(){
 
   q.print();
 
-//  cout << q.pop() << endl;
-
-  //Body
-  // cout << f.getContents();
+  cout << "Made by : Simon Symeonidis" << endl;
+  cout << "  You can send request, praise and hate here: lethaljellybean@gmail.com " <<endl;
 
   return 0; // Yay, nothing broke
 }
