@@ -1,8 +1,10 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 
 <head>
   <link type="text/css" rel="stylesheet" href="css/main.css" />
   <script type="text/javascript" src="story.js"></script>
+  <script type="text/javascript" src="func.js"></script>
 </head>
 
 <body>
@@ -10,7 +12,7 @@
 <div class="wrap">
   <div class="contents">
     <div class="header"><h1>Title goes here</h1></div>
-    <div class="storyspace">
+    <div id="story" class="storyspace">
       <p>
       lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.
       lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.
@@ -23,11 +25,11 @@
       </p>
       </div>
 
-    <div class="actionbuttons">
-      <input value="action 1" type="button" class="button block" />
-      <input value="action 2" type="button" class="button block" />
-      <input value="action 3" type="button" class="button block" />
-      <input value="action 4" type="button" class="button block" />
+    <div id="choice" class="actionbuttons">
+      <input onClick="javascript:swap(1);" value="action 1" type="button" class="button block" />
+      <input onClick="javascript:swap(1);" value="action 2" type="button" class="button block" />
+      <input onClick="javascript:swap(1);" value="action 3" type="button" class="button block" />
+      <input onClick="javascript:swap(1);" value="action 4" type="button" class="button block" />
     </div>
   
   </div>
