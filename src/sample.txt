@@ -1,0 +1,19 @@
+
+#BLOB 1
+This is where the story begins. bla dee bla.
+#GOTO 2
+#GOTO 3
+
+#BLOB 2
+This is choice 2
+#GOTO 4
+
+#BLOB 3
+This is choice 3
+#GOTO 4
+
+#BLOB 4 
+And this is the end
+#END 
+
+
