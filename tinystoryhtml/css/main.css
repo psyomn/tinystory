@@ -15,6 +15,11 @@ h1 {
 
 a {
   color:#00BBDD;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
 }
 
 .tinystorybanner {
@@ -25,6 +30,7 @@ a {
   background-color:#0D2744;
   color:#FFFFFF;
   border-bottom:#008899 3px solid;
+  padding:5px;
 }
 
 .wrap {

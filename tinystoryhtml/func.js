@@ -11,3 +11,12 @@ function swap(swid){
   choice_element.innerHTML = choiceArray[swid];
 
 }
+
+/** Standard initialization routines */
+function init(){
+  var title_element = document.getElementById('storytitle');
+  // Set the story to the start
+  swap(0);
+  // Set the title 
+  title_element.innerHTML = titleOfStory;
+}

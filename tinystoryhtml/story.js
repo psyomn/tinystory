@@ -4,6 +4,7 @@
 
 var storyArray = new Array();
 var choiceArray = new Array();
+var titleOfStory = "Test Story";
 
 // BLOB 0
 storyArray[0] = "The quick brown fox jumps over the lazy dog";

@@ -8,32 +8,27 @@
 </head>
 
 <body>
-<div class="tinystorybanner">Generated with Tinystory v1.0 (<a href="http://github.com/psyomn/tinystory/">github</a>)</div>
+<div class="tinystorybanner"> 
+  <a href="javascript:window.location.reload()">Reset</a> | 
+  <a href="">About</a> | 
+  Generated with Tinystory v1.0 (<a href="http://github.com/psyomn/tinystory/">github</a>)
+</div>
+
 <div class="wrap">
   <div class="contents">
-    <div class="header"><h1>Title goes here</h1></div>
-    <div id="story" class="storyspace">
-      <p>
-      lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.
-      lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.
-      lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.  
-      </p>
-      <p>
-      lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.
-      lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.
-      lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.  
-      </p>
-      </div>
+    <div class="header"><h1 id="storytitle">Title goes here</h1></div>
 
-    <div id="choice" class="actionbuttons">
-      <input onClick="javascript:swap(1);" value="action 1" type="button" class="button block" />
-      <input onClick="javascript:swap(1);" value="action 2" type="button" class="button block" />
-      <input onClick="javascript:swap(1);" value="action 3" type="button" class="button block" />
-      <input onClick="javascript:swap(1);" value="action 4" type="button" class="button block" />
-    </div>
+    <div id="story" class="storyspace"></div>
+    <div id="choice" class="actionbuttons"></div>
   
   </div>
 </div>
+
+<script type="text/javascript"> 
+  // This step is needed to initialize the story box and action spaces 
+  init();
+</script> 
+
 </body>
 
 </html>

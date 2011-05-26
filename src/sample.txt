@@ -1,19 +1,19 @@
+#TITLE Adventure Of Dude #ENDTITLE
+
+#BLOB 0
+This is where the story begins. bla dee bla.
+#GOTO 1
+#GOTO 2
 
 #BLOB 1
-This is where the story begins. bla dee bla.
-#GOTO 2
+This is choice 1
 #GOTO 3
 
 #BLOB 2
 This is choice 2
-#GOTO 4
+#GOTO 3
 
-#BLOB 3
-This is choice 3
-#GOTO 4
-
-#BLOB 4 
+#BLOB 3 
 And this is the end
-#END 
 
 
