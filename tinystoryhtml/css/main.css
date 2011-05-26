@@ -1,0 +1,78 @@
+body {
+  margin:0;
+  padding:0;
+  background:url('bkg.png') top left repeat;
+}
+
+h1 {
+  font-size:40px;
+  background:#FFFFFF;
+  border:#0068DE 1px solid;
+  color:#005599;
+  -moz-border-radius:15px;
+  border-radius:15px;
+}
+
+a {
+  color:#00BBDD;
+}
+
+.tinystorybanner {
+  text-align:right;
+  font-size:13px;
+  letter-spacing:2px;
+  height:20px;
+  background-color:#0D2744;
+  color:#FFFFFF;
+  border-bottom:#008899 3px solid;
+}
+
+.wrap {
+  width:800px;
+  margin-top:10px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.contents {
+  width:100%;
+}
+
+.header {
+  text-align:center;
+}
+
+.storyspace {
+  border:#0068DE 1px solid;
+  border-radius:15px;
+  -moz-border-radius:15px;
+  padding:15px;
+  background:#FFFFFF;
+}
+
+  .storyspace p{
+    margin:0;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:15px;
+    text-align:justify;
+  }
+
+.block {
+  margin-top:5px;
+  margin-left:auto;
+  margin-right:auto;
+  width:50%;
+  display:block;
+}
+
+.button {
+  background: url('buttonfade.png') bottom left repeat;
+  border:#3D5D80 1px solid;
+  font-weight:bold;
+  -moz-border-radius:15px;
+  border-radius:15px;
+}
+
+
+
