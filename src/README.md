@@ -14,5 +14,5 @@ In the future, maybe Qt will be used in order to provide a simple interface for 
 Credits
 ====================================
 Thanks to the tango project for the refresh and about icon, drawn by
-  * / warszawianka : http://www.openclipart.org/detail/33685
-  * / warszawianka : http://www.openclipart.org/detail/35203
+    * / warszawianka : http://www.openclipart.org/detail/33685
+    * / warszawianka : http://www.openclipart.org/detail/35203
