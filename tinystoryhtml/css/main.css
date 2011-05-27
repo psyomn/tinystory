@@ -30,8 +30,26 @@ a:hover {
   background-color:#0D2744;
   color:#FFFFFF;
   border-bottom:#008899 3px solid;
-  padding:5px;
+  height:25px;
+  padding:3px;
 }
+  .tinystorybanner a {
+    font-weight:bold;
+  }
+  
+  .tinystorybanner a.refresh {
+    padding-left:20px; 
+    padding-right:8px; 
+    background:url('refresh.png') top left no-repeat;
+  }
+
+  .tinystorybanner a.about {
+    padding-left:24px; 
+    padding-right:8px; 
+    padding-top:3px;
+    padding-bottom:3px;
+    background:url('about.png') top left no-repeat;
+  }
 
 .wrap {
   width:800px;
