@@ -29,6 +29,7 @@ private:
   // Function shortcuts to generate html
   std::string generateChoiceHTML(std::string,std::string,std::string,std::string);
   std::string generateStoryHTML(std::string,std::string);
+  std::string generateEndHTML(std::string);
 };
 
 #endif

@@ -12,9 +12,13 @@ This is choice 1
 
 #BLOB 2
 This is choice 2
-#GOTO 3 Choose the wrong path! #ENDGOTO
+#GOTO 4 Choose the wrong path! #ENDGOTO
 
 #BLOB 3 
-And this is the end
+And this is the end. You live happilly evar after. 
+#END
 
+#BLOB 4 
+BOOM! YOU DEAD! NO BIG SURPRISE!
+#END
 

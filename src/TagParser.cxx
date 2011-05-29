@@ -93,6 +93,9 @@ void TagParser::parse(){
         ++it;
       }
       mOutputJS += "var authorOfStory = \"" + authorName + "\";\n";
+    } else if ( !it->compare("#END")  ) {
+      std::cout << "Detected END tag. Terminating at : " << blobID << std::endl;
+      mOutputJS += generateEndHTML(blobID);
     } else {
       std::cout << "Blob token : " << *it << std::endl;
       tempBlob += *it + " ";
@@ -130,5 +133,12 @@ std::string TagParser::generateStoryHTML(std::string blob, std::string id){
   return tmp;
 }
 
+std::string TagParser::generateEndHTML(std::string id){
+  std::string tmp = "";
+  tmp += mIdent; // Ident for easier debugging
+  tmp += "choiceArray[" + id + "] = \"";
+  tmp +=  "\";\n";
+  return tmp;
+}
 #endif 
 
