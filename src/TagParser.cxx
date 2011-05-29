@@ -31,14 +31,19 @@ void TagParser::parse(){
   std::vector<std::string>::const_iterator it;
   std::string tempBlob = ""; 
   std::string blobID = ""; 
+  std::string gotoID = ""; 
   std::string prevgtid = "";
+  std::string authorName = "";
+  std::string tmplabel = ""; 
   FileHandler fh("story.js");
 
   // Begin the Javascript stuff
   mOutputJS = ""; 
-  mOutputJS += "/** All the story stored as the array */\n";
+  mOutputJS += "/** All the story stored as the array."; 
+  mOutputJS += "\nThese are globals and should not be tampered with */\n";
   mOutputJS += "var storyArray = new Array(); \n";
   mOutputJS += "var choiceArray = new Array(); \n";
+
   // End the beginning
 
   for (it = pTokens->begin(); it != pTokens->end(); ++it){
@@ -67,8 +72,27 @@ void TagParser::parse(){
     } else if ( !it->compare("#GOTO") ) {
       ++it;
       std::cout << "GOTO detected with id : " <<  *it << std::endl;
-      mOutputJS += generateChoiceHTML("Temp Label " + blobID + ":" + *it, blobID, *it, prevgtid);
+      gotoID = *it; 
+      tmplabel = "";
+
+      ++it; 
+      while ( it->compare("#ENDGOTO") ) {
+        tmplabel += *it + " ";
+        ++it;
+      }
+
+      std::cout << std::endl;
+
+      mOutputJS += generateChoiceHTML(tmplabel,blobID,gotoID,prevgtid);
       prevgtid = blobID;
+    } else if ( !it->compare("#AUTHOR") ) {
+      std::cout << "Detected Author Tag" << std::endl;
+      ++it;
+      while( it->compare("#ENDAUTHOR") ) {
+        authorName += *it + " ";  // Store whatever the author name is 
+        ++it;
+      }
+      mOutputJS += "var authorOfStory = \"" + authorName + "\";\n";
     } else {
       std::cout << "Blob token : " << *it << std::endl;
       tempBlob += *it + " ";

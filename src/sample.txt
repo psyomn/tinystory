@@ -1,17 +1,18 @@
 #TITLE Adventure Of Dude #ENDTITLE
+#AUTHOR Some Weird Name #ENDAUTHOR 
 
 #BLOB 0
 This is where the story begins. bla dee bla.
-#GOTO 1
-#GOTO 2
+#GOTO 1 Choose the path of thorns #ENDGOTO
+#GOTO 2 Choose the path of nails #ENDGOTO
 
 #BLOB 1
 This is choice 1
-#GOTO 3
+#GOTO 3 Choose the right path! #ENDGOTO 
 
 #BLOB 2
 This is choice 2
-#GOTO 3
+#GOTO 3 Choose the wrong path! #ENDGOTO
 
 #BLOB 3 
 And this is the end
