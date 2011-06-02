@@ -3,6 +3,7 @@
 #include "FileHandler.hxx"
 #include "Tokenizer.hxx"
 #include "TagParser.hxx"
+#include "Log.hxx"
 
 int main(){
   Tokenizer tok;

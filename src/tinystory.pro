@@ -10,5 +10,5 @@ CONFIG -= qt
 OBJECTS_DIR = obj
 
 # Input
-HEADERS += FileHandler.hxx Tokenizer.hxx TagParser.hxx
-SOURCES += FileHandler.cxx Tokenizer.cxx TagParser.cxx main.cxx 
+HEADERS += FileHandler.hxx Tokenizer.hxx TagParser.hxx Log.hxx
+SOURCES += FileHandler.cxx Tokenizer.cxx TagParser.cxx Log.cxx main.cxx 

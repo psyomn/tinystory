@@ -4,8 +4,10 @@
 #include <fstream>
 #include <string>
 #include <iostream> 
+#include <dirent.h>
 
-/** Simple class that handles 
+/** Simple class that handles filesystem stuff. 
+Handles file read write and folder creation
 \author psyomn 
 */
 class FileHandler {
