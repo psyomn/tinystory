@@ -36,7 +36,7 @@ by the person writting the story - ie requirement to set a blob with id 0 for
 the first page...) */
 function init(){
   // Set the title of story 
-  $('#storytitle').html = titleOfStory;
+  $('#storytitle').html(titleOfStory);
   // Set the initial stuff to show
   $('#story').html(storyArray[0]);
   $('#choice').html(choiceArray[0]);

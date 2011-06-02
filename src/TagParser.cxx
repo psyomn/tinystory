@@ -28,6 +28,10 @@ void TagParser::setTokens(std::vector<std::string>* vectok) {
    o #GOTO <int>
 */
 void TagParser::parse(){ 
+
+
+
+#if 0
   std::vector<std::string>::const_iterator it;
   std::string tempBlob = ""; 
   std::string blobID = ""; 
@@ -108,6 +112,7 @@ void TagParser::parse(){
   // Print the resulting file for 
   std::cout << mOutputJS << std::endl;
   fh.write(mOutputJS);
+#endif 
 }
 
 /** Routine to clean up code from the parsing routine */
