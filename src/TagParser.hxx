@@ -26,10 +26,17 @@ private:
   std::string mOutputJS; /** The JS to be written to a file */
   static std::string mIdent; /** Simply to set indentation in output files. */
 
-  // Function shortcuts to generate html
-  std::string generateChoiceHTML(std::string,std::string,std::string,std::string);
+  // Function shorthands to generate html. They reduce code clutter. 
+  std::string generateChoiceHTML(std::string,std::string,std::string);
   std::string generateStoryHTML(std::string,std::string);
-  std::string generateEndHTML(std::string);
+
+  // Parsing Functions 
+  std::string parseGOTO(std::vector<std::string>::const_iterator, std::string); 
+  std::string parseBLOB(std::vector<std::string>::const_iterator); 
+  std::string parseAUTHOR(std::vector<std::string>::const_iterator);
+  std::string parseTITLE(std::vector<std::string>::const_iterator); 
+  std::string parseEND(std::string);
+  std::string parseCOMMENTS(); 
 };
 
 #endif
