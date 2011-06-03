@@ -60,6 +60,8 @@ std::string Log::getDate(){
 void Log::logMessage(std::string str){
   mFile.open(mName.c_str(), std::fstream::app); 
   if(mFile){ 
+    mFile << getTime(); // Add unix timestamp as prefix
+    mFile << "  |  "; 
     mFile << str;
     mFile << std::endl;
     mFile.close();
