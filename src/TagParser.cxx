@@ -1,6 +1,3 @@
-#ifndef TAGPARSER_CXX
-#define TAGPARSER_CXX
-
 #include "TagParser.hxx" 
 
 std::string TagParser::mIdent = "  ";
@@ -187,6 +184,5 @@ std::string TagParser::parseCOMMENTS() {
   return str; 
 }
 
-#endif 
 
 

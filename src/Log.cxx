@@ -1,6 +1,3 @@
-#ifndef LOG_CXX
-#define LOG_CXX
-
 #include "Log.hxx" 
 
 Log* Log::pInst = 0; // Set pointer as zero before anything 
@@ -69,6 +66,3 @@ void Log::logMessage(std::string str){
     std::cout << "FATAL: Logging class cannot open needed file " << std::endl;
   }
 }
-
-#endif 
-

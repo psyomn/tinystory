@@ -1,5 +1,3 @@
-#ifndef FOLDERHANDLER_CXX
-#define FOLDERHANDLER_CXX
 
 #include "FolderHandler.hxx"
 
@@ -15,4 +13,3 @@ bool FolderHandler::exists(){
 void FolderHandler::make(){
 }
 
-#endif 

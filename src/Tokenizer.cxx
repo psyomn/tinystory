@@ -1,6 +1,3 @@
-#ifndef TOKENIZER_CXX
-#define TOKENIZER_CXX
-
 #include "Tokenizer.hxx"
 
 /** Default constructor */
@@ -63,5 +60,4 @@ std::vector<std::string>* Tokenizer::getPointerToTokens()
   return &mTokens;
 }
 
-#endif
 
